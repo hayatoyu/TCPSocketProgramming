@@ -25,8 +25,8 @@ namespace TCPSocketProgramming.Class
         {
             this.ip = ip;
             this.port = port;
-            
-                
+            if (autoStart)
+                this.Run();
         }
 
         public void Run()
